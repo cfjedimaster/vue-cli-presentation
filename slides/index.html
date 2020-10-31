@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>The Vue CLI for People Scared of the Vue CLI</title>
+
+        <link rel="stylesheet" href="dist/reset.css">
+        <link rel="stylesheet" href="dist/reveal.css">
+        <link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-background="img/map.jpg" data-background-opacity="0.3">
+                    <h1>The Vue CLI</h1>
+                    <h2 class="fragment">For People Scared of the Vue CLI</h2>
+                </section>
+
+                <section>
+                    <h2>read.me</h2>
+                    <ul>
+                        <li>Raymond Camden</li>
+                        <li>Lead Developer Evangelist for HERE</li>
+                        <li>Second best "Just Dance 2019" player (in my house)</li>
+                        <li>Blogging at raymondcamden.com</li>
+                        <li>Tweeting @raymondcamden</li>
+                    </ul>
+                </section>	
+
+                <section>
+                <h2>I am...</h2>
+                <ul>
+                <li class="fragment">Web developer (20+ years)</li>
+                <li class="fragment">I'm almost good</li>
+                <li class="fragment">My JavaScript skill level is look it up at MDN to see if it mutates the original value or returns a new one</li>
+                <li class="fragment">I (almost) used <code>reduce()</code> without checking the docs!</li>
+                <li class="fragment">A Vue.js developer!</li>
+                </ul>
+                <aside class="notes">
+                Ramble on about how I still feel like I'm learning...
+                </aside>
+                </section>
+
+                <section>
+                    <h2>It started well...</h2>
+                    <img src="img/v1.png">
+                    <aside class="notes">
+                    Ramble on about how I encountered Vue
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Things got out of control...</h2>
+                    <img src="img/v2.png">
+                    <aside class="notes">
+                    over a hundred posts later, also articles for other mags
+                    </aside>
+                </section>
+
+                <section data-background="img/play.jpg" data-background-size="contain">
+                    <aside class="notes">
+                    i could play with Vue
+                    </aside>
+                </section>
+
+                <section>
+                <blockquote>
+                "Vue is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from 
+                the ground up to be <u>incrementally adoptable</u>. 
+                The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or 
+                existing projects."
+                </blockquote>
+                <aside class="notes">
+                everyone talks about apps.
+                no one talks about - i've got a page and just want to add some magic to it
+                </aside>
+                </section>
+
+                <section>
+                <h2>Vue as a PE tool</h2>
+                <ul>
+                <li class="fragment">I could drop a script tag in and go</li>
+                <li class="fragment">I could use CodePen</li>
+                <li class="fragment">No build process!</li>
+                <li class="fragment">A better (for me!) jQuery</li>
+                </ul>
+                </section>
+
+                <section>
+                    <h1>Yes and...</h1>
+                    <aside>
+                </section>
+
+                <section>
+                <blockquote>
+"On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in 
+combination with modern tooling and supporting libraries."
+                </blockquote>
+                </section>
+
+                <section>
+                <h2>When to build an app vs PE</h2>
+                <ul>
+                <li class="fragment">How do you know when it's an app and not just PE?</li>
+                <li class="fragment">Todo: Write the precise rule you can check to know when to do one vs the other</li>
+                <li class="fragment">Todo: Definitely don't leave this till the day of the presentation, Ray</li>
+                <li class="fragment">Todo: All of the above</li>
+                </ul>
+                </section>
+
+                <section>
+                <h2>You know you *may* need an app when....</h2>
+                <ul>
+                <li class="fragment">Multiple screens</li>
+                <li class="fragment">When you need to add code and you start seeing 4 digit line numbers</li>
+                <li class="fragment">When you are working with multiple people</li>
+                <li class="fragment">Projects tend to grow, not shrink</li>
+                </ul>
+                </section>
+
+                <section data-background="img/dragon.png" data-background-opacity="0.2">
+                <h1>ENTER</h1>
+                <h2>The Vue CLI</h2>
+                </section>
+
+                <section>
+                <h2>CLI Basics</h2>
+                <ul>
+                <li class="fragment">Installed via NPM (or yarn)</li>
+                <li class="fragment">Scaffolds application</li>
+                <li class="fragment">Lets you add features</li>
+                <li class="fragment">Serves a visual UI for managing your app</li>
+                <li class="fragment">Prototyping</li>
+                </ul>
+                <aside class="notes">
+                You may not now what NPM is - that's ok - I'm going to cover it in the next slide
+                scaffolding is a fancy way of saying laying out all the files for you
+                </aside>
+                </section>
+
+                <section>
+                <h2>WTF is NPM?</h2>
+                <ul>
+                <li class="fragment">Node Package Manager</li>
+                <li class="fragment">A versatile way to install things</li>
+                <li class="fragment">Node developers use it, but you don't need to care about that</li>
+                <li class="fragment">Install Node</li>
+                </ul>
+                <aside class="notes">
+                I can create something that relies on other tools, A, B and C. I set things up
+                so that my tool says it needs those things, and npm handles getting A, B, and C, and if
+                A needs something else, it gets it, and if _that_ things needs something, it gets it, and so on.
+                </aside>
+                </section>
+
+                <section>
+                    <h2>nodejs.org</h2>
+                    <img src="img/node.png">
+                </section>
+
+                <section>
+                <h2>Install</h2>
+                <pre><code class="bash">
+npm install -g @vue/cli
+                </code></pre>
+                </section>
+
+                <section>
+                <h2>Scaffolding</h2>
+                <ul>
+                <li class="fragment">You begin with a name</li>
+                <li class="fragment">CLI will ask you some questions</li>
+                <li class="fragment">You get some<sup>*</sup> files</li>
+                </ul>
+                <p class="fragment" style="font-size:18px">"Some" being a number between less than infinity and infinity</p>
+                </section>
+
+                <section>
+                <h2>Example</h2>
+                <pre><code class="bash">
+vue create myCoolProject
+                </code></pre>
+                <aside class="notes">
+                lets do that!                
+                </aside>
+                </section>
+
+				<section data-background="img/cat_qa.png" data-background-opacity="0.2">
+					<h1>Questions</h1>
+					<p>reach me at @raymondcamden</p>
+					<p>slides: <a href="https://github.com/cfjedimaster/vue-cli-presentation" target="_new">github.com/cfjedimaster/vue-cli-presentation</a></p>
+				</section>
+
+            </div>
+        </div>
+
+        <script src="dist/reveal.js"></script>
+        <script src="plugin/notes/notes.js"></script>
+        <script src="plugin/markdown/markdown.js"></script>
+        <script src="plugin/highlight/highlight.js"></script>
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+                slideNumber: 'c/t' 
+            });
+        </script>
+    </body>
+</html>
