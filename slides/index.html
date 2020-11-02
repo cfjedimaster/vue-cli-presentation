@@ -185,6 +185,7 @@ npm install -g @vue/cli
                 <pre><code class="bash">
 vue create myCoolProject
                 </code></pre>
+                <p class="fragment">Let's do that!</p>
                 <aside class="notes">
                 lets do that!
 
@@ -194,6 +195,7 @@ vue create myCoolProject
                 mention how npm can also run scripts 
 
                 whats in the folder:
+                    readme - great if you forget 
                     node_modules, what my app needs 
                     package*.json - what my app needs - talk about how you can remove nm before sending 
                     .gitignore - used for github 
@@ -210,7 +212,92 @@ vue create myCoolProject
                 npm run build 
                 show dist
                 
+                show eslint and breaking it, add created with unused var
+                edit package.json, add it with 0
+
+                show adding router, show change to code
                 </aside>
+                </section>
+
+                <section>
+                <h2>Vue UI</h2>
+                <ul>
+                <li class="fragment">GUI tool for Vue apps</li>
+                <li class="fragment"><code>vue ui</code></li>
+                <li class="fragment">Ray, show this now!</li>
+                </ul>
+                </section>
+
+                <section>
+                <h2>Prototyping</h2>
+                <ul>
+                <li class="fragment"><code>vue serve</code></li>
+                <li class="fragment">Requires another install</li>
+                </ul>
+                </section>
+
+                <section>
+                <img src="img/v3.png">
+                </section>
+
+                <section>
+                <h2>Prototyping</h2>
+                <ul>
+                <li><code>vue serve</code></li>
+                <li>Requires another install</li>
+                <li class="fragment"><code>vue serve</code></li>
+                </ul>
+                </section>
+
+                <section>
+                <img src="img/v4.png">
+                </section>
+
+                <section>
+                <h2>Prototyping</h2>
+                <ul>
+                <li><code>vue serve</code></li>
+                <li>Requires another install</li>
+                <li class="fragment">Make a file!</li>
+                </ul>
+                </section>
+
+
+                <section>
+                <pre><code class="html r-stretch" data-trim>
+<template>
+  <div>
+    <h2>Tower of Kitty</h2>
+    <img v-for="(cat,i) in cats" :src="cat" :key="i">
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    let cats = [];
+    for(let i=1;i<8;i++) cats.push(`https://placekitten.com/${i*100}/${i*100}`);
+    return { cats }
+  }
+}
+</script>
+
+<style>
+img {
+  display: block; margin-bottom:10px; margin-left: auto; margin-right: auto;
+}
+</style>
+                </code></pre>
+                <aside class="notes">show</aside>
+                </section>
+
+                <section>
+                <h2>What Next?</h2>
+                <ul>
+                <li class="fragment"><a href="https://cli.vuejs.org/" target="_new">cli.vuejs.org</li>
+                <li class="fragment"><a href="https://vuejs.org/v2/guide/single-file-components.html" target="_new">vuejs.org/v2/guide/single-file-components.html</a></li>
+                <li class="fragment"><a href="https://codesandbox.io/" target="_new">codesandbox.io</a></li>
+                </ul>
                 </section>
 
 				<section data-background="img/cat_qa.png" data-background-opacity="0.2">
